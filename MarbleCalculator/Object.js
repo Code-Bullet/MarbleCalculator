@@ -129,7 +129,6 @@ class Object {
         break;
 
       case "AND Gate":
-        print("fucking and");
         this.solids.push(new Solid(this.x + flipper * 19, this.y + 32, this.x + flipper * 19, this.y + 124, 10));
         this.solids.push(new Solid(this.x + flipper * 19, this.y + 122, this.x + flipper * 19, this.y + 206, 10));
         this.solids.push(new Solid(this.x + flipper * 19, this.y + 204, this.x + flipper * 104, this.y + 294, 10));
