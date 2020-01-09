@@ -605,14 +605,14 @@ function showEverything() {
     noStroke();
   }
 
-  if(mouseX > canvas.width) {
+  if(mouseX > canvas.width || keyIsDown(68)) {
     cameraX += 10;
-  } else if(mouseX < 10) {
+  } else if(mouseX < 10 || keyIsDown(65)) {
     cameraX -= 10;
   }
-  if(mouseY > canvas.height) {
+  if(mouseY > canvas.height || keyIsDown(83)) {
     cameraY += 10;
-  } else if(mouseY < 10) {
+  } else if(mouseY < 10 || keyIsDown(87)) {
     cameraY -= 10;
   }
 }
